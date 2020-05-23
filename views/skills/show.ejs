@@ -10,8 +10,10 @@
 </head>
 
 <body>
+    <a href="/">Home</a> | <a href="/server.js">List of Accomplishments</a>
     <h3> <%= skill.skill %> </h3>
     <h4>Description: <%= skill.description %> </h4>
+    <a href="/skills/<%= skill.id %>/edit">Edit Accomplishment</a>
     <form action="/skills/<%= skill.id %>?_method=DELETE" class="delete-form" method="POST">
         <button type="submit">Delete Accomplishment</button>
     </form>
